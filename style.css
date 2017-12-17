@@ -1,0 +1,77 @@
+.logo {
+width: 25%;
+padding-top: 30px;
+}
+
+.selfie {
+width: 40%;
+border-radius: 100%;
+}
+
+
+.container {
+    display: grid;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    grid-gap: 15px;
+    grid-template-areas: "logo about"
+                         "foto text" 
+                         "hobbies text";
+    grid-template-rows: 150px 350px 200px;
+    grid-template-columns: 1fr 2fr; 
+}
+
+.image-container {
+    grid-area: foto;
+    align-self: center;
+    margin: auto;
+}
+.logo-container {
+    grid-area: logo;
+    align-self: center;
+    margin: auto;
+}
+.logo {
+    width: 270px;
+    }
+    
+.selfie {
+    border-radius: 100%;
+    width: 350px;
+    }
+header {
+    grid-area: about;
+}
+.short-story {
+    grid-area: text;
+    background-color:DarkSeaGreen ;
+    opacity: 0.2;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hobby {
+    grid-area: hobbies;
+    background-color: yellow ;
+    opacity: 0.2;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+   
+}
+
+h5.hobby {
+    font-family: 'Roboto Slab';
+    font-size: 30px ;  
+    color: black;
+}
+h5.short-story {
+    font-family: 'Roboto Slab';
+    font-size: 30px ;  
+    color: black;
+}
+
